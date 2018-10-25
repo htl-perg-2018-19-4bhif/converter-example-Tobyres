@@ -1,15 +1,20 @@
 {
-  "name": "9030-converter",
+  "name": "Converter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "convert.js.js",
   "scripts": {
-    "test": "jasmine"
+    "build": "tsc",
+    "test": "npm run build && node converter.spec.js",
+    "start": "npm run build && node convert.js"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@types/node": "^8.0.4"
+  },
   "devDependencies": {
     "jasmine": "^3.2.0",
-    "jasmine-spec-reporter": "^4.2.1"
+    "typescript": "^3.1.3"
   }
 }
